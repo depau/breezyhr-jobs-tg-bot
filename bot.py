@@ -1,6 +1,7 @@
 import asyncio
 import json
 import os
+import time
 
 import requests
 from bs4 import BeautifulSoup
@@ -82,4 +83,4 @@ async def main():
 if __name__ == "__main__":
     while True:
         asyncio.run(main())
-        asyncio.sleep(os.environ.get("POLL_INTERVAL", 3600))
+        time.sleep(int(os.environ.get("POLL_INTERVAL", 3600)))

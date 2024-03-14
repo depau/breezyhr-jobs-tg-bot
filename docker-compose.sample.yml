@@ -7,5 +7,6 @@ services:
       - ./data:/data
     environment:
       URL: "CHANGEME"
-      TELEGRAM_TOKEN: "CHANGEME"
+      TELEGRAM_BOT_TOKEN: "CHANGEME"
       TELEGRAM_CHAT_ID: "CHANGEME"
+      POLL_INTERVAL: "3600"
